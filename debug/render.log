@@ -1,0 +1,5 @@
+Traceback (most recent call last):
+  File "/home/runner/work/lux-media-factory/lux-media-factory/scripts/render.py", line 13, in <module>
+    W, H, FPS = 1080, 1920
+    ^^^^^^^^^
+ValueError: not enough values to unpack (expected 3, got 2)

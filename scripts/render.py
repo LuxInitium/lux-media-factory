@@ -7,6 +7,7 @@ import urllib.request
 from pathlib import Path
 
 from PIL import Image, ImageDraw, ImageEnhance, ImageFilter, ImageFont, ImageOps
+import cairosvg
 
 ROOT = Path(__file__).resolve().parents[1]
 CONFIG = ROOT / "content" / "current.json"
@@ -43,6 +44,10 @@ def gradient(top, bottom):
 
 
 def cover_image(path):
+    if Path(path).suffix.lower() == ".svg":
+        png_path = BUILD / (Path(path).stem + ".png")
+        cairosvg.svg2png(url=str(path), write_to=str(png_path), output_width=W, output_height=H)
+        path = png_path
     source = Image.open(path).convert("RGB")
     return ImageOps.fit(source, (W, H), method=Image.Resampling.LANCZOS, centering=(0.5, 0.5))
 

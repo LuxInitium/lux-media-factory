@@ -101,7 +101,7 @@ def main():
         frames = max(1, int(duration * FPS))
         vf = (
             f"scale=1200:2134,"
-            f"zoompan=z='min(zoom+0.00055,1.08)':"
+            f"zoompan=z='min(zoom+0.00055\\,1.08)':"
             f"x='iw/2-(iw/zoom/2)':y='ih/2-(ih/zoom/2)':"
             f"d={frames}:s={W}x{H}:fps={FPS},format=yuv420p"
         )

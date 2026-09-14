@@ -1,0 +1,37 @@
+{
+  "campaign": "LuxInitium introduction",
+  "brand": "LUXINITIUM",
+  "tagline": "LIGHT THE BEGINNING.",
+  "colors": {
+    "background_top": "#05070D",
+    "background_bottom": "#111827",
+    "accent": "#E7C66A",
+    "text": "#FFFFFF"
+  },
+  "scenes": [
+    {
+      "eyebrow": "A NEW BEGINNING",
+      "headline": "Ideas need more than potential.",
+      "body": "They need a system that turns them into something real.",
+      "duration": 5
+    },
+    {
+      "eyebrow": "BUILD",
+      "headline": "From opportunity to operation.",
+      "body": "Research. Branding. Launch. Growth.",
+      "duration": 5
+    },
+    {
+      "eyebrow": "CREATE",
+      "headline": "One vision. Multiple businesses.",
+      "body": "Built independently. Operated intelligently.",
+      "duration": 5
+    },
+    {
+      "eyebrow": "LUXINITIUM",
+      "headline": "Light the beginning.",
+      "body": "@luxinitium",
+      "duration": 5
+    }
+  ]
+}

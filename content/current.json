@@ -1,40 +1,35 @@
 {
-  "campaign": "LuxInitium visual launch",
-  "brand": "LUXINITIUM",
-  "tagline": "LIGHT THE BEGINNING.",
+  "campaign": "Mom and child shop for a Lux Imports scooter",
+  "brand": "LUX IMPORTS",
+  "tagline": "YOUR NEXT RIDE STARTS HERE.",
   "colors": {
-    "background_top": "#03050A",
-    "background_bottom": "#0A1020",
-    "accent": "#F2C85B",
+    "background_top": "#07101F",
+    "background_bottom": "#17243A",
+    "accent": "#F0C75E",
     "text": "#FFFFFF"
   },
   "scenes": [
     {
-      "eyebrow": "EVERYTHING STARTS",
-      "headline": "With one moment of light.",
+      "eyebrow": "A QUICK SHOPPING TRIP",
+      "headline": "Mom, look!",
       "body": "",
-      "media_url": "https://images.unsplash.com/photo-1756326424981-3d09f2121e1a?auto=format&fit=crop&fm=jpg&q=82&w=1800",
+      "media": "story-mom-kid-01.svg",
       "duration": 3.2
     },
     {
-      "eyebrow": "WE TURN IDEAS",
-      "headline": "Into something real.",
+      "eyebrow": "LOVE AT FIRST SIGHT",
+      "headline": "This is the one!",
       "body": "",
-      "media_url": "https://images.unsplash.com/photo-1768341190024-885814a30aaa?auto=format&fit=crop&fm=jpg&q=82&w=1800",
+      "media": "story-mom-kid-02.svg",
       "duration": 3.2
     },
     {
-      "eyebrow": "LUXINITIUM",
-      "headline": "Light the beginning.",
+      "eyebrow": "FOUND AT LUX IMPORTS",
+      "headline": "The perfect ride.",
       "body": "",
-      "cta": "FOLLOW @LUXINITIUM",
-      "media_url": "https://images.unsplash.com/photo-1518165239018-75cb8c31cc5c?auto=format&fit=crop&fm=jpg&q=82&w=1800",
+      "cta": "MESSAGE US TO ORDER",
+      "media": "story-mom-kid-03.svg",
       "duration": 3.6
     }
-  ],
-  "image_credits": [
-    "Venti Views / Unsplash",
-    "Sweder Breet / Unsplash",
-    "Tom Coe / Unsplash"
   ]
 }

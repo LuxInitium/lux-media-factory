@@ -38,7 +38,26 @@ jobs:
           python -m pip install --disable-pip-version-check pillow
 
       - name: Render vertical video
-        run: python scripts/render.py
+        id: render
+        continue-on-error: true
+        run: |
+          set -o pipefail
+          python scripts/render.py 2>&1 | tee render.log
+
+      - name: Save failure diagnostics
+        if: steps.render.outcome == 'failure'
+        run: |
+          mkdir -p debug
+          cp render.log debug/render.log
+          git config user.name "lux-media-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add debug/render.log
+          git commit -m "Save latest renderer diagnostics"
+          git push
+
+      - name: Stop after renderer failure
+        if: steps.render.outcome == 'failure'
+        run: exit 1
 
       - name: Publish stable latest release
         env:

@@ -3,6 +3,7 @@ import math
 import os
 import subprocess
 import textwrap
+import urllib.request
 from pathlib import Path
 
 from PIL import Image, ImageDraw, ImageEnhance, ImageFilter, ImageFont, ImageOps
@@ -89,13 +90,24 @@ def add_logo(image):
     return image
 
 
+def remote_media(scene, index):
+    url = scene.get("media_url")
+    if not url:
+        return None
+    target = BUILD / f"remote-{index:02d}.jpg"
+    request = urllib.request.Request(url, headers={"User-Agent": "LuxMediaFactory/1.0"})
+    with urllib.request.urlopen(request, timeout=30) as response:
+        target.write_bytes(response.read())
+    return target
+
+
 def make_slide(scene, cfg, index, total):
     palette = cfg["colors"]
     top, bottom = color(palette["background_top"]), color(palette["background_bottom"])
     accent, white = color(palette["accent"]), color(palette["text"])
 
     media_name = scene.get("media")
-    media_path = ASSETS / media_name if media_name else None
+    media_path = ASSETS / media_name if media_name else remote_media(scene, index)
     if media_path and media_path.exists():
         image = cover_image(media_path)
         image = ImageEnhance.Contrast(image).enhance(1.08)

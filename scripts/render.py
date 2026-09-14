@@ -99,12 +99,7 @@ def main():
         segment = BUILD / f"segment-{index:02d}.mp4"
         duration = float(scene.get("duration", 5))
         frames = max(1, int(duration * FPS))
-        vf = (
-            f"scale=1200:2134,"
-            f"zoompan=z='min(zoom+0.00055\\,1.08)':"
-            f"x='iw/2-(iw/zoom/2)':y='ih/2-(ih/zoom/2)':"
-            f"d={frames}:s={W}x{H}:fps={FPS},format=yuv420p"
-        )
+        vf = f"scale={W}:{H},fps={FPS},format=yuv420p"
         run([
             "ffmpeg", "-y", "-loop", "1", "-i", str(slide),
             "-vf", vf, "-t", str(duration), "-r", str(FPS),

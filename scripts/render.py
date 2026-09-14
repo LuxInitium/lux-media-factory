@@ -10,7 +10,7 @@ ROOT = Path(__file__).resolve().parents[1]
 CONFIG = ROOT / "content" / "current.json"
 BUILD = ROOT / "build"
 OUTPUT = ROOT / "output"
-W, H, FPS = 1080, 1920
+W, H, FPS = 1080, 1920, 30
 
 
 def font(size, bold=False):

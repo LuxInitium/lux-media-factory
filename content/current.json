@@ -1,38 +1,40 @@
 {
-  "campaign": "LuxInitium brand launch",
+  "campaign": "LuxInitium visual launch",
   "brand": "LUXINITIUM",
   "tagline": "LIGHT THE BEGINNING.",
   "colors": {
-    "background_top": "#05070D",
-    "background_bottom": "#101827",
-    "accent": "#E7C66A",
+    "background_top": "#03050A",
+    "background_bottom": "#0A1020",
+    "accent": "#F2C85B",
     "text": "#FFFFFF"
   },
   "scenes": [
     {
-      "eyebrow": "THE PROBLEM",
-      "headline": "Good ideas die without execution.",
-      "body": "We turn potential into an operating business.",
-      "duration": 3.8
+      "eyebrow": "EVERYTHING STARTS",
+      "headline": "With one moment of light.",
+      "body": "",
+      "media_url": "https://images.unsplash.com/photo-1756326424981-3d09f2121e1a?auto=format&fit=crop&fm=jpg&q=82&w=1800",
+      "duration": 3.2
     },
     {
-      "eyebrow": "THE SYSTEM",
-      "headline": "Research. Build. Launch. Improve.",
-      "body": "Every venture gets its own strategy and path to revenue.",
-      "duration": 3.8
-    },
-    {
-      "eyebrow": "THE VISION",
-      "headline": "One foundation. Multiple opportunities.",
-      "body": "Independent businesses built to grow.",
-      "duration": 3.8
+      "eyebrow": "WE TURN IDEAS",
+      "headline": "Into something real.",
+      "body": "",
+      "media_url": "https://images.unsplash.com/photo-1768341190024-885814a30aaa?auto=format&fit=crop&fm=jpg&q=82&w=1800",
+      "duration": 3.2
     },
     {
       "eyebrow": "LUXINITIUM",
       "headline": "Light the beginning.",
-      "body": "Follow what we build next.",
+      "body": "",
       "cta": "FOLLOW @LUXINITIUM",
-      "duration": 4.2
+      "media_url": "https://images.unsplash.com/photo-1518165239018-75cb8c31cc5c?auto=format&fit=crop&fm=jpg&q=82&w=1800",
+      "duration": 3.6
     }
+  ],
+  "image_credits": [
+    "Venti Views / Unsplash",
+    "Sweder Breet / Unsplash",
+    "Tom Coe / Unsplash"
   ]
 }

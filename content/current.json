@@ -1,37 +1,38 @@
 {
-  "campaign": "LuxInitium introduction",
+  "campaign": "LuxInitium brand launch",
   "brand": "LUXINITIUM",
   "tagline": "LIGHT THE BEGINNING.",
   "colors": {
     "background_top": "#05070D",
-    "background_bottom": "#111827",
+    "background_bottom": "#101827",
     "accent": "#E7C66A",
     "text": "#FFFFFF"
   },
   "scenes": [
     {
-      "eyebrow": "A NEW BEGINNING",
-      "headline": "Ideas need more than potential.",
-      "body": "They need a system that turns them into something real.",
-      "duration": 5
+      "eyebrow": "THE PROBLEM",
+      "headline": "Good ideas die without execution.",
+      "body": "We turn potential into an operating business.",
+      "duration": 3.8
     },
     {
-      "eyebrow": "BUILD",
-      "headline": "From opportunity to operation.",
-      "body": "Research. Branding. Launch. Growth.",
-      "duration": 5
+      "eyebrow": "THE SYSTEM",
+      "headline": "Research. Build. Launch. Improve.",
+      "body": "Every venture gets its own strategy and path to revenue.",
+      "duration": 3.8
     },
     {
-      "eyebrow": "CREATE",
-      "headline": "One vision. Multiple businesses.",
-      "body": "Built independently. Operated intelligently.",
-      "duration": 5
+      "eyebrow": "THE VISION",
+      "headline": "One foundation. Multiple opportunities.",
+      "body": "Independent businesses built to grow.",
+      "duration": 3.8
     },
     {
       "eyebrow": "LUXINITIUM",
       "headline": "Light the beginning.",
-      "body": "@luxinitium",
-      "duration": 5
+      "body": "Follow what we build next.",
+      "cta": "FOLLOW @LUXINITIUM",
+      "duration": 4.2
     }
   ]
 }
